@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "highlight-on-copy",
+    "version": "1.0",
+  
+    "description": "Changes selection color for 200ms when you copy text.",
+    "permissions": [
+      "clipboardWrite",
+      "clipboardRead",
+      "activeTab",
+      "scripting",
+      "storage"
+    ],
+
+
+  
+    "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["extension.js"]
+    }]
+  }
+  
